@@ -1,4 +1,7 @@
 # WindowsWireguardWatchdog
+
+> Boost Your WireGuard Stability on Windows 10/11 with this PowerShell Script and never lose connection again!
+
 Powershell script to monitor a wireguard connection unter Windows 10 / 11 and restart if needed
 
 # PowerShell Script for Restarting WireGuard Service
