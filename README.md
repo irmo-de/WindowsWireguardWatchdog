@@ -34,9 +34,18 @@ To install the PowerShell script as a Windows service using NSSM:
 
    Replace `C:\path\to\your\script.ps1` with the actual path to your PowerShell script.
 
-5. NSSM will open a GUI window where you can configure the service. Fill in the necessary details, such as the service name, startup directory, and arguments. Click "Install" to proceed.
 
-6. Once the installation is complete, you can start the service using the following command:
+   To modify the target IP address for pinging, update the `keep_alive.ps1` script:
+
+   ```powershell
+   $TargetHost = "192.168.178.1"
+   $PingInterval = 5 * 60  # 5 minutes in seconds
+   ```
+
+
+6. NSSM will open a GUI window where you can configure the service. Fill in the necessary details, such as the service name, startup directory, and arguments. Click "Install" to proceed.
+
+7. Once the installation is complete, you can start the service using the following command:
 
    ```shell
    nssm.exe start WireGuardService
