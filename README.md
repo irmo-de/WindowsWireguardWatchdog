@@ -41,7 +41,7 @@ To install the PowerShell script as a Windows service using NSSM:
    $TargetHost = "192.168.178.1"
    $PingInterval = 5 * 60  # 5 minutes in seconds
    ```
-
+   > **Note:** The IP address should be inside your WireGuard network.
 
 6. NSSM will open a GUI window where you can configure the service. Fill in the necessary details, such as the service name, startup directory, and arguments. Click "Install" to proceed.
 
